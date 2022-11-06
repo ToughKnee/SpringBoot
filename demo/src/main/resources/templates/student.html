@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+  <head>
+    <!-- <meta charset="UTF-8"/> -->
+    <title th:text="${title}"></title>
+  </head>
+
+  <body>
+    <h1 th:text="${title}"></h1>
+    <span th:text="${student.name}"></span>
+    <span th:text="${student.age}"></span>
+    <br>
+
+    <span th:if="${student.dob == null}">Student doesn't have a DOB</span> 
+    
+    <!--The "if" here must be set -->
+    <span th:if="${student.id > 50}" >Large id = </span>
+    <span th:text="${student.id}"></span>
+
+  </body>
+</html>
