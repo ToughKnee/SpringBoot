@@ -11,23 +11,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.thymeleaf.standard.expression.NumberTokenExpression;
 
 @Controller
-@RequestMapping("/params")
+@RequestMapping("/params") //Change this "GetMapping" to see what happens
 public class ParamsController {
-
-  @GetMapping("/string")
-  public String params(@RequestParam(name = "text", defaultValue = "nothing given") String text, Model model)
-  {
-    model.addAttribute("res", "The sent text was:" + text);
-
-    return "params/view";
-  }
 
   @GetMapping("/")//Method that SENDS info to the URL using thymeleaf and an "anchor" in HTML
   public String index()
   {
     return "params/index";
   }
-  
+
+  @GetMapping("/string")
+  public String params(@RequestParam(name = "text", defaultValue = "nothing given") String text, Model model) //Nota como aqui se llama "RequestPARAM"
+  {
+    model.addAttribute("res", "The sent text was:" + text);
+
+    return "params/view";
+  }
 
   @GetMapping("/stringnum")
   public String params(@RequestParam String text, @RequestParam Integer num, Model model)

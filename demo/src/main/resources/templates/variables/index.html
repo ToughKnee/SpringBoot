@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+  <head>
+    <!-- <meta charset="UTF-8"/> -->
+    <title>Variables Index</title>
+  </head>
+
+  <body>
+    <h1>Variables Index</h1>
+    <ul>
+      <li>
+        <a th:href="@{/variables/string/} + 'Texto' + '/' + 78987">You will send "Texto" and  78987 as the 'variables' of the path</a>
+      </li>
+      <br>
+      <li>
+        <a th:href="@{/variables/string/} + 'Hil'">1 parameter</a>
+      </li>
+      <br>
+      <li>
+        <a th:href="@{string/} + 'aeaeaea' + '/' + ${7}">aeaeaeae</a> 
+        <!-- PAY ATTENTION to this above, that thing "concatenates" the string inside the brackets to the actual URL instead of doing what the others do 
+        Another note on this is that this variables stuff is not used like this in the real world, they are used via "${}" things inside the anchor, those indicate a "true variable" and the name of it ((We can see how that is used with a "literal variable", we are defining the variable "instantly"))-->
+      </li>
+    </ul>
+
+  </body>
+</html>

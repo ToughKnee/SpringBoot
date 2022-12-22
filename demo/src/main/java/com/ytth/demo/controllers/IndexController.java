@@ -55,4 +55,11 @@ public class IndexController {
     return students;
   }
 }
+/* 
+//=====================================  Interesting stuff
 
+//=======  variables/index.html
+Whats funny here is not about variables per se, its about how tyhmeleaf works when used with the anchors and the "@{}" thing to redirect the user to other places
+
+
+*/

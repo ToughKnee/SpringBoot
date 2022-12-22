@@ -10,9 +10,13 @@
     <ul>
       <li>
         <a th:href="@{/params/string(text='Hil')}">You will send "Hil" as the parameter of the URL</a>
-        <br>
+      </li>
+      <br>
+      <li>
         <a th:href="@{/params/stringnum(text='2 params', num=75)}">2 parameters</a>
-        <br>
+      </li>
+      <br>
+      <li>
         <a th:href="@{/params/httpserv(text='Http Servlet', num='mmmn')}">Using HttpServlet</a>
       </li>
     </ul>
