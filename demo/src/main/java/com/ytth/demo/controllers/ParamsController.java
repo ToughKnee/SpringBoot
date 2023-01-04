@@ -1,6 +1,5 @@
 package com.ytth.demo.controllers;
 
-import javax.annotation.Generated;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
@@ -8,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.thymeleaf.standard.expression.NumberTokenExpression;
 
 @Controller
 @RequestMapping("/params") //Change this "GetMapping" to see what happens
